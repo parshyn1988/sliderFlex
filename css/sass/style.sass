@@ -1,0 +1,49 @@
+*
+  box-sizing: border-box
+body
+  margin: 0
+  padding: 0
+  color: #ffffff
+  font-family: 'Bad Script', sans-serif
+.slider
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0
+.item
+  box-shadow: 0 0 15px rgba(0, 0, 0, .8)
+  opacity: .6
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #eeeeee
+  flex-basis: 25%
+  height: 100vh
+  flex-basis: 25%
+  transition: all .4s
+  &:hover
+    flex-basis: 100%
+    opacity: 1
+  span
+    font-size: 2rem
+    text-shadow: 0 0 10px #000
+.item-1
+  background: url(../../image/img-1.jpg) no-repeat no-repeat
+  background-size: cover
+.item-2
+  background: url(../../image/img-2.jpg) no-repeat no-repeat
+  background-size: cover
+.item-3
+  background: url(../../image/img-3.jpg) no-repeat no-repeat
+  background-size: cover
+.item-4
+  background: url(../../image/img-4.jpg) no-repeat no-repeat
+  background-size: cover
+@media screen and (max-width: 768px)
+  .slider
+    height: 100vh
+    flex-flow: column
+  .item
+    width: 100%
+    &:hover
+      flex-grow: 30%
